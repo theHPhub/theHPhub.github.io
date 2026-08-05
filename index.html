@@ -48,6 +48,7 @@
   @media (max-width:760px){ nav.links{display:none;} }
 
   .hero{position:relative; z-index:1; padding:150px 0 90px;}
+  .hero-photo{width:96px; height:96px; border-radius:50%; border:2px solid var(--amber); padding:4px; margin-bottom:26px; object-fit:cover; box-shadow:0 0 0 1px var(--line), 0 12px 30px rgba(0,0,0,0.35);}
   .status-line{display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:12px; color:var(--teal); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:22px; flex-wrap:wrap;}
   .status-dot{width:7px; height:7px; border-radius:50%; background:var(--teal); box-shadow:0 0 8px var(--teal); animation:pulse 2s infinite;}
   @keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.35;}}
@@ -156,6 +157,7 @@
 </header>
 
 <section class="hero wrap">
+  <img class="hero-photo" src="haripriya-headshot.png" alt="Haripriya Raghunathan">
   <div class="status-line"><span class="status-dot"></span><span data-i18n="hero_status">AVAILABLE FOR OPPORTUNITIES — DATA ANALYST · DATA SCIENTIST · DATA ENGINEER · AI ENGINEER</span></div>
   <h1 data-i18n="hero_h1">Turning shop-floor data into decisions people <span>trust</span>.</h1>
   <p class="lede" data-i18n="hero_lede">Data professional bridging analytics, engineering and machine learning — building real-time dashboards, automated data pipelines and predictive models that turn manufacturing data into decisions people trust.</p>
@@ -172,7 +174,7 @@
     <div class="kpi-grid">
       <div class="kpi">
         <div class="kpi-label" data-i18n="kpi1_label">Projects shipped</div>
-        <div class="kpi-value" data-count="7">0</div>
+        <div class="kpi-value" data-count="10">0</div>
         <div class="kpi-bar"><span data-fill="88"></span></div>
       </div>
       <div class="kpi">
@@ -201,7 +203,7 @@
   <h2 class="section-title" data-i18n="journey_title">From the classroom to the control room.</h2>
   <div class="timeline">
     <div class="tl-item reveal">
-      <div class="tl-role" data-i18n="tl1_role">Data Specialist — Amcor Flexibles GmbH</div>
+      <div class="tl-role" data-i18n="tl1_role">Aushilfe (Intern) — Amcor Flexibles GmbH</div>
       <div class="tl-meta" data-i18n="tl1_meta">Continuous Improvement · Singen, Germany · 01/2026 – Present</div>
       <p class="tl-desc" data-i18n="tl1_desc">Analyze manufacturing, quality and inspection data on Siemens Insights Hub to identify trends, deviations and process anomalies. Built real-time Grafana dashboards monitoring 250+ process and quality parameters.</p>
     </div>
@@ -293,13 +295,6 @@
     </div>
 
     <div class="card reveal">
-      <div class="card-top"><h3 data-i18n="proj2_title">Amcor Production Dashboards</h3><span class="card-tag" data-i18n="proj2_tag">GRAFANA</span></div>
-      <p data-i18n="proj2_desc">Real-time monitoring dashboards for 250+ process and quality parameters on Siemens Insights Hub — early deviation detection to reduce scrap and rework.</p>
-      <div class="stack"><span>Insights Hub</span><span>Grafana</span><span>Node-RED</span></div>
-      <a class="card-link" href="https://github.com/theHPhub" target="_blank" rel="noopener"><span data-i18n="link_github">View on GitHub →</span></a>
-    </div>
-
-    <div class="card reveal">
       <div class="card-top"><h3 data-i18n="proj3_title">E-Scooter Demand Forecasting</h3><span class="card-tag" data-i18n="proj3_tag">CLOUD ETL</span></div>
       <p data-i18n="proj3_desc">Cloud ETL pipeline forecasting e-scooter demand across European cities, combining weather data with historical usage patterns.</p>
       <div class="stack"><span>Python</span><span>BeautifulSoup</span><span>GCP Cloud Functions</span><span>MySQL</span><span>OpenWeather API</span></div>
@@ -324,7 +319,6 @@
       <div class="card-top"><h3 data-i18n="proj6_title">Power Apps Ticketing Tool</h3><span class="card-tag" data-i18n="proj6_tag">LOW-CODE</span></div>
       <p data-i18n="proj6_desc">Production issue reporting app used by shop-floor staff to log and track problems in real time.</p>
       <div class="stack"><span>Power Apps</span><span>Power Automate</span><span>SharePoint</span></div>
-      <a class="card-link" href="https://github.com/theHPhub" target="_blank" rel="noopener"><span data-i18n="link_github">View on GitHub →</span></a>
     </div>
 
     <div class="card reveal" style="grid-column:1/-1;">
@@ -332,6 +326,20 @@
       <p data-i18n="proj7_desc">Automated planning and production reporting system with VBA-driven data validation, automatic KPI calculation, Power BI dashboard refresh and a daily email summary.</p>
       <div class="stack"><span>Excel VBA</span><span>Power BI</span><span>Power Automate</span></div>
       <a class="card-link" href="https://github.com/theHPhub" target="_blank" rel="noopener"><span data-i18n="link_github">View on GitHub →</span></a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-top"><h3 data-i18n="proj8_title">Chocolate Sales Dashboard</h3><span class="card-tag" data-i18n="proj8_tag">POWER BI</span></div>
+      <p data-i18n="proj8_desc">Power BI dashboard analyzing chocolate sales performance by product, country, sales representative and time period — KPI cards, monthly/quarterly trends, revenue by product, and salesperson ranking.</p>
+      <div class="stack"><span>Power BI</span><span>Excel</span><span>DAX</span></div>
+      <a class="card-link" href="https://github.com/theHPhub/Chocalatecompany_DataAnalysis_PowerBI/tree/main" target="_blank" rel="noopener"><span data-i18n="link_github">View on GitHub →</span></a>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-top"><h3 data-i18n="proj10_title">Process Engineering Dashboard</h3><span class="card-tag" data-i18n="proj10_tag">POWER BI</span></div>
+      <p data-i18n="proj10_desc">Power BI dashboard for process engineering analysis, monitoring key process parameters and performance metrics to support engineering decisions.</p>
+      <div class="stack"><span>Power BI</span><span>DAX</span></div>
+      <a class="card-link" href="https://github.com/theHPhub/Process_Engineering_Dashboard_using_PowerBI" target="_blank" rel="noopener"><span data-i18n="link_github">View on GitHub →</span></a>
     </div>
 
   </div>
@@ -375,7 +383,7 @@
       kpi_panel_label:"SHIFT_OVERVIEW · LIVE",
       kpi1_label:"Projects shipped", kpi2_label:"Parameters monitored", kpi3_label:"CI Award 2026", kpi4_label:"Core stack",
       journey_eyebrow:"Journey", journey_title:"From the classroom to the control room.",
-      tl1_role:"Data Specialist — Amcor Flexibles GmbH", tl1_meta:"Continuous Improvement · Singen, Germany · 01/2026 – Present",
+      tl1_role:"Aushilfe (Intern) — Amcor Flexibles GmbH", tl1_meta:"Continuous Improvement · Singen, Germany · 01/2026 – Present",
       tl1_desc:"Analyze manufacturing, quality and inspection data on Siemens Insights Hub to identify trends, deviations and process anomalies. Built real-time Grafana dashboards monitoring 250+ process and quality parameters.",
       tl2_role:"Data Science Bootcamp — WBS Coding School", tl2_meta:"Berlin, Germany · 08/2025 – 12/2025",
       tl2_desc:"Intensive, project-based program in Python, machine learning, data engineering and Google Cloud Platform.",
@@ -406,6 +414,12 @@
       proj6_desc:"Production issue reporting app used by shop-floor staff to log and track problems in real time.",
       proj7_title:"Excel VBA + Power BI Reporting System", proj7_tag:"AUTOMATION",
       proj7_desc:"Automated planning and production reporting system with VBA-driven data validation, automatic KPI calculation, Power BI dashboard refresh and a daily email summary.",
+      proj8_title:"Chocolate Sales Dashboard", proj8_tag:"POWER BI",
+      proj8_desc:"Power BI dashboard analyzing chocolate sales performance by product, country, sales representative and time period — KPI cards, monthly/quarterly trends, revenue by product, and salesperson ranking.",
+      proj9_title:"Integrated Planning-to-Production Process", proj9_tag:"PROCESS INTEGRATION",
+      proj9_desc:"Project connecting planning data with shop-floor production execution, aligning production schedules with actual output for better cross-functional visibility.",
+      proj10_title:"Process Engineering Dashboard", proj10_tag:"POWER BI",
+      proj10_desc:"Power BI dashboard for process engineering analysis, monitoring key process parameters and performance metrics to support engineering decisions.",
       link_try:"Try the live app →", link_github:"View on GitHub →", link_tableau:"View on Tableau →",
       award_h:"Amcor Flexibles EMEA Continuous Improvement Excellence Award — Project Octopus",
       award_p:"Recognized for a cross-site initiative moving process monitoring from reactive to predictive, using historical operating data to anticipate deviations before they occur.",
@@ -452,6 +466,12 @@
       proj6_desc:"App zur Meldung von Produktionsproblemen, genutzt vom Shopfloor-Personal zur Erfassung und Nachverfolgung in Echtzeit.",
       proj7_title:"Excel-VBA- + Power-BI-Reporting-System", proj7_tag:"AUTOMATISIERUNG",
       proj7_desc:"Automatisiertes Planungs- und Produktionsreporting mit VBA-basierter Datenvalidierung, automatischer Kennzahlenberechnung, Power-BI-Dashboard-Aktualisierung und täglichem E-Mail-Versand.",
+      proj8_title:"Chocolate Sales Dashboard", proj8_tag:"POWER BI",
+      proj8_desc:"Power-BI-Dashboard zur Analyse der Schokoladenverkäufe nach Produkt, Land, Vertriebsmitarbeiter und Zeitraum — KPI-Karten, Monats-/Quartalstrends, Umsatz nach Produkt und Ranking der Vertriebsmitarbeiter.",
+      proj9_title:"Integrierter Planungs-zu-Produktions-Prozess", proj9_tag:"PROZESSINTEGRATION",
+      proj9_desc:"Projekt zur Verknüpfung von Planungsdaten mit der Produktionsausführung auf dem Shopfloor — Abgleich von Produktionsplänen mit tatsächlicher Leistung für mehr bereichsübergreifende Transparenz.",
+      proj10_title:"Process Engineering Dashboard", proj10_tag:"POWER BI",
+      proj10_desc:"Power-BI-Dashboard für die Prozesstechnik-Analyse — Überwachung wichtiger Prozessparameter und Leistungskennzahlen zur Unterstützung technischer Entscheidungen.",
       link_try:"Live-App testen →", link_github:"Auf GitHub ansehen →", link_tableau:"Auf Tableau ansehen →",
       award_h:"Amcor Flexibles EMEA Continuous Improvement Excellence Award — Project Octopus",
       award_p:"Ausgezeichnet für eine standortübergreifende Initiative, die die Prozessüberwachung von reaktiv auf prädiktiv umstellt — auf Basis historischer Betriebsdaten werden Abweichungen erkannt, bevor sie auftreten.",
